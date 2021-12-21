@@ -1,0 +1,292 @@
+#pane{
+    -fx-background-image: url('img/tatpudge.png');
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+}
+
+#logo{
+    -fx-background-image: url('img/main_logo.png');
+    -fx-background-repeat: stretch;
+    -fx-background-size: 414 134;
+    -fx-background-position: center center;
+}
+
+#navigation-bar{
+    -fx-padding: 510 660 250 660 ;
+}
+
+#create-btn{
+    -fx-background-color: #08A304;
+    -fx-font-family: HelveticaNeueCyr;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFF;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-effect: dropshadow( three-pass-box,rgba(8, 163, 4, 0.8), 20, 0, 0,0);
+}
+
+#create-btn:hover{
+    -fx-effect: dropshadow( three-pass-box, rgba(6, 255, 0, 0.8), 20, 0, 0,0);
+    -fx-background-color: #54ff00;
+    -fx-min-width: 150px;
+    -fx-min-height: 48px;
+}
+
+#enter-btn{
+    -fx-background-color: #d30505;
+    -fx-font-family: HelveticaNeueCyr;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFF;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-effect: dropshadow( three-pass-box, rgb(215, 3, 3), 20, 0, 0,0);
+}
+
+#enter-btn:hover{
+    -fx-effect: dropshadow( three-pass-box, rgb(255, 0, 0), 20, 0, 0,0);
+    -fx-background-color: #ff0000;
+    -fx-min-width: 150px;
+    -fx-min-height: 48px;
+}
+
+#generated-code{
+    /*-fx-highlight-text-fill: white;*/
+    -fx-font-size: 25px;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+
+}
+
+#code{
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-padding: 10px 0px 10px 0px  ;
+}
+
+#second-information-code{
+    -fx-alignment: center;
+    -fx-padding: 280px 0px 0px 0px;
+}
+#second-enter-btn{
+    -fx-background-color: #d30505;
+    -fx-font-family: HelveticaNeueCyr;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFF;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-effect: dropshadow( three-pass-box, rgb(215, 3, 3), 20, 0, 0,0);
+    /*-fx-padding: 0px 0px 0px 200px;*/
+    /*-fx-text-alignment: center;*/
+    /*-fx-padding: 0px -1000px 0px 0px ;*/
+}
+
+#second-enter-btn:hover{
+    -fx-effect: dropshadow( three-pass-box, rgb(255, 0, 0), 20, 0, 0,0);
+    -fx-background-color: #ff0000;
+    -fx-min-width: 150px;
+    -fx-min-height: 48px;
+}
+
+#game-field{
+    -fx-background-image: url('img/game_field.png');
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1920 1080;
+    -fx-background-position: center center;
+
+}
+
+#input-information{
+    -fx-padding: 65px 0px 0px 0px;
+}
+
+#enter-code{
+    -fx-font-size: 25px;
+    -font-weight: bold;
+    -fx-text-fill: #FFF;
+    -fx-padding: 0px 80px 0px 0px;
+}
+
+#input-code{
+    -fx-min-width: 400px;
+    -fx-min-height: 50px;
+    -fx-font-size: 25px;
+    -fx-background-color: transparent;
+    -fx-border-color: #FFF;
+    -fx-text-fill: #FFF;
+}
+
+#hb-players{
+    -fx-alignment: top-center;
+}
+
+#player-1{
+    -fx-text-fill: #FFF;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+}
+
+#player-2{
+    -fx-text-fill: #FFF;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+}
+
+#timer{
+    -fx-text-fill: #FFF;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+}
+
+#go-to-back{
+    -fx-background-color: #d30505;
+    -fx-font-family: HelveticaNeueCyr;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFF;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-effect: dropshadow( three-pass-box, rgb(215, 3, 3), 20, 0, 0,0)
+}
+
+#go-to-back:hover{
+    -fx-effect: dropshadow( three-pass-box, rgb(255, 0, 0), 20, 0, 0,0);
+    -fx-background-color: #ff0000;
+    -fx-min-width: 150px;
+    -fx-min-height: 48px;
+    transition: all 0.5s ease;
+}
+
+
+#end-field{
+    -fx-background-image: url('img/winning.png');
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+
+    -fx-background-position: center center;
+}
+#endVbox{
+    -fx-alignment: center;
+}
+#finish-him{
+    -fx-font-size: 100px;
+    -font-weight: bold;
+    -fx-text-fill: #FFF;
+}
+
+#winner{
+    -fx-font-size: 40px;
+    -font-weight: bold;
+    -fx-text-fill: #FFF;
+}
+#chatPane{
+    -fx-content-display: center;
+}
+
+#generatePort{
+    -fx-background-color: #08A304;
+    -fx-font-family: HelveticaNeueCyr;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFF;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-effect: dropshadow( three-pass-box,rgba(8, 163, 4, 0.8), 20, 0, 0,0);
+}
+
+#generatePort:hover{
+    -fx-effect: dropshadow( three-pass-box, rgba(6, 255, 0, 0.8), 20, 0, 0,0);
+    -fx-background-color: #54ff00;
+}
+
+#btn-secondary-scene{
+    -fx-alignment: center;
+}
+
+#vbox-generate{
+    -fx-alignment: center;
+    -fx-padding: 300px 0px 0px 0px;
+}
+
+/*#pudge{*/
+/*    -fx-background-image: url('img/pudge_model.png');*/
+/*    -fx-background-repeat: stretch;*/
+/*    -fx-background-size: 201 131;*/
+/*}*/
+
+Image{
+    -fx-background-repeat: stretch;
+    -fx-background-size: 201 131;
+}
+
+#chat-area{
+    -fx-padding: 30px 0px 0px 200px;
+}
+
+#label-name{
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFF;
+}
+
+#input-name{
+    -fx-min-width: 200px;
+    -fx-min-height: 30px;
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-border-color: #FFF;
+    -fx-text-fill: #FFF;
+}
+
+#connect-btn{
+    -fx-background-color: #08A304;
+    -fx-font-family: HelveticaNeueCyr;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFF;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-effect: dropshadow( three-pass-box,rgba(8, 163, 4, 0.8), 20, 0, 0,0);
+}
+
+#message-view{
+    -fx-background-color: transparent;
+    -fx-border-color: #0034ff;
+}
+
+#input-message{
+    -fx-min-width: 200px;
+    -fx-min-height: 30px;
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-border-color: #FFF;
+    -fx-text-fill: #FFF;
+}
+
+#send-message{
+    -fx-effect: dropshadow( three-pass-box, rgb(255, 0, 0), 20, 0, 0,0);
+    -fx-background-color: #ff0000;
+    -fx-font-family: HelveticaNeueCyr;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFF;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+}
+
+#pudge-3d{
+    -fx-background-image: url('img/pudge-walk-transparent-background-pudge.gif');
+    -fx-background-repeat: stretch;
+    -fx-background-size: 700 500;
+    -fx-padding: 350px 0px 0px 50px;
+}
+
+#chat-field{
+    -fx-background-image: url('img/bg-chat.png');
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+}

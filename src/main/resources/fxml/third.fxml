@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<StackPane id="pane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml" fx:controller="ru.itis.ThirdController">
+    <StackPane id="logo" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml" >
+
+    </StackPane>
+    <StackPane id="navigation-bar">
+        <VBox id="input-information" spacing="15">
+
+            <Label id="enter-code"> Введите код:</Label>
+            <TextField id="input-code" prefWidth="200" prefHeight="50"/>
+            <HBox spacing="100">
+                <Button text="Назад!"  minWidth="150" minHeight="42" id="go-to-back" onMouseClicked="#goBack"/>
+                <Button text="Играть!" minWidth="150" minHeight="42" id="create-btn" onAction="#goPlay" />
+
+            </HBox>
+
+        </VBox>
+    </StackPane>
+</StackPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.HBox?>
+
+<StackPane id="pane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml" fx:controller="ru.itis.PrimaryController">
+    <StackPane id="logo" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml" >
+
+    </StackPane>
+    <StackPane id="navigation-bar">
+        <HBox id="hbox-button" spacing="80">
+            <Button text="Cоздать код" minWidth="150" minHeight="42"  id="create-btn" onAction="#switchToSecondary" />
+            <Button text="Ввести код" minWidth="150" minHeight="42" id="enter-btn" onAction="#switchToThird"/>
+            <Button text="End screen" minWidth="150" minHeight="42" id="enter-btn" onAction="#switchToEndController"/>
+            <Button text="Чат" minWidth="150" minHeight="42" id="enter-btn" onAction="#goToChat"/>
+        </HBox>
+    </StackPane>
+</StackPane>

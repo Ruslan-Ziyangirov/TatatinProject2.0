@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane id="end-field" prefHeight="200" prefWidth="320" xmlns:fx="https://javafx.com/fxml"
+           fx:controller="ru.itis.EndController">
+
+    <VBox id="endVbox" spacing="20" >
+        <Label id="finish-him">ПОБЕДИЛ</Label>
+        <Label id="winner">Игрок 1</Label>
+        <Button text="Вернуться на главный экран!" minHeight="42" id="go-to-back" onMouseClicked="#goMainScene"/>
+    </VBox>
+
+</StackPane>
