@@ -5,21 +5,27 @@
 
 <?import javafx.scene.image.ImageView?>
 <Pane id="game-field" xmlns:fx="https://javafx.com/fxml"
-      fx:controller="ru.itis.GameField" fx:id="myPane" maxWidth="200.0">
+      fx:controller="ru.itis.controller.GameField" fx:id="myPane" maxWidth="200.0">
     <HBox spacing="250" id="hb-players">
-        <Label fx:id="player1" id="player-1"> Игрок 1: 343 очков</Label>
+        <HBox spacing="10">
+            <Label fx:id="player1" id="player-1"> Игрок 1:</Label>
+            <Label id="player-2" fx:id="p1Points">0</Label>
+        </HBox>
         <Label id="timer" fx:id="timer_str"/>
-        <Label id="player-2"> Игрок 2: 321 очков</Label>
+        <HBox spacing="10">
+            <Label fx:id="player2"> Игрок 2:</Label>
+            <Label id="player-2" fx:id="p2Points">0</Label>
+        </HBox>
     </HBox>
-    <ImageView  fx:id="pudge1"   xmlns:fx="http://javafx.com/fxml" />
-    <ImageView  fx:id="pudge2"   xmlns:fx="http://javafx.com/fxml" />
-    <ImageView  fx:id="pudge3"   xmlns:fx="http://javafx.com/fxml" />
-    <ImageView  fx:id="pudge4"   xmlns:fx="http://javafx.com/fxml" />
-    <ImageView  fx:id="pudge5"   xmlns:fx="http://javafx.com/fxml" />
-    <ImageView  fx:id="pudge6"   xmlns:fx="http://javafx.com/fxml" />
-    <ImageView  fx:id="pudge7"   xmlns:fx="http://javafx.com/fxml" />
-    <ImageView  fx:id="pudge8"   xmlns:fx="http://javafx.com/fxml" />
-    <ImageView  fx:id="pudge9"   xmlns:fx="http://javafx.com/fxml" />
-    <ImageView  fx:id="pudge10"   xmlns:fx="http://javafx.com/fxml" />
+    <ImageView  fx:id="pudge1"   xmlns:fx="http://javafx.com/fxml" onMouseClicked="#KillPudge1" />
+    <ImageView  fx:id="pudge2"   xmlns:fx="http://javafx.com/fxml" onMouseClicked="#KillPudge2"/>
+    <ImageView  fx:id="pudge3"   xmlns:fx="http://javafx.com/fxml" onMouseClicked="#KillPudge3"/>
+    <ImageView  fx:id="pudge4"   xmlns:fx="http://javafx.com/fxml" onMouseClicked="#KillPudge4"/>
+    <ImageView  fx:id="pudge5"   xmlns:fx="http://javafx.com/fxml" onMouseClicked="#KillPudge5"/>
+    <ImageView  fx:id="pudge6"   xmlns:fx="http://javafx.com/fxml"/>
+    <ImageView  fx:id="pudge7"   xmlns:fx="http://javafx.com/fxml"/>
+    <ImageView  fx:id="pudge8"   xmlns:fx="http://javafx.com/fxml"/>
+    <ImageView  fx:id="pudge9"   xmlns:fx="http://javafx.com/fxml"/>
+    <ImageView  fx:id="pudge10"   xmlns:fx="http://javafx.com/fxml"/>
 
 </Pane>

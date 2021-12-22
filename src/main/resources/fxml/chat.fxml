@@ -24,15 +24,19 @@
 
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
-<StackPane id="chat-field" prefHeight="300" prefWidth="420" xmlns:fx="https://javafx.com/fxml"
-           fx:controller="ru.itis.ChatController" >
+<StackPane id="chat-field" fx:id="chatField" prefHeight="300" prefWidth="420" xmlns:fx="https://javafx.com/fxml"
+           fx:controller="ru.itis.controller.ChatController" >
 
     <HBox>
+        <VBox spacing="20" id="area-btn">
+            <Button id="go-to-back-chat" minWidth="150" minHeight="42" onMouseClicked="#goBack" >Назад!</Button>
+        </VBox>
+
         <VBox id="chat-area" spacing="30">
             <VBox spacing="10">
                 <Label text="Введите свое имя: " id="label-name"/>
                 <TextField  id="input-name" fx:id="name"/>
-                <Button  text="Начать игру!" minWidth="100" minHeight="30" id="connect-btn"/>
+                <Button  text="Войти в чат!" minWidth="100" minHeight="30" id="connect-btn" fx:id="enterChat"/>
             </VBox>
 
             <ScrollPane  minWidth="400" minHeight="450"
@@ -44,7 +48,7 @@
             <VBox spacing="10">
                 <Label text="Введите сообщение: " id="label-name"/>
                 <TextField  minWidth="400" accessibleText="Введите сообщение" id="input-message" fx:id="messageText"/>
-                <Button minWidth="100" minHeight="30" text="Отправить сообщение" id="send-message"/>
+                <Button minWidth="100" minHeight="30" text="Отправить сообщение" id="send-message" fx:id="sendMessage"/>
             </VBox>
 
         </VBox>

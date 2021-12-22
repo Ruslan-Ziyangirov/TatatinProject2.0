@@ -223,7 +223,7 @@ Image{
 }
 
 #chat-area{
-    -fx-padding: 30px 0px 0px 200px;
+    -fx-padding: 30px 0px 0px 120px;
 }
 
 #label-name{
@@ -289,4 +289,29 @@ Image{
     -fx-background-repeat: stretch;
     -fx-background-size: 100% 100%;
     -fx-background-position: center center;
+}
+
+#go-to-back-chat{
+    -fx-background-color: #d30505;
+    -fx-font-family: HelveticaNeueCyr;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFF;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-effect: dropshadow( three-pass-box, rgb(215, 3, 3), 20, 0, 0,0);
+    -fx-alingment: left top;
+    /*-fx-label-padding: 10px 0px 0px 10px;*/
+}
+
+#go-to-back-chat:hover{
+    -fx-effect: dropshadow( three-pass-box, rgb(255, 0, 0), 20, 0, 0,0);
+    -fx-background-color: #ff0000;
+    -fx-min-width: 150px;
+    -fx-min-height: 48px;
+    transition: all 0.5s ease
+}
+
+#area-btn{
+    -fx-padding: 15px 0px 0px 15px;
 }

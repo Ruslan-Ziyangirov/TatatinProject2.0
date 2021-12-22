@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Label?>
 
-<StackPane id="pane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml" fx:controller="ru.itis.SecondaryController"  >
+<StackPane id="pane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml" fx:controller="ru.itis.controller.SecondaryController"  >
     <StackPane id="logo" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml" >
 
     </StackPane>

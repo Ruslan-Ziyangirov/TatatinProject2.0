@@ -1,12 +1,9 @@
 package ru.itis;
 
 import javafx.application.Platform;
-import javafx.fxml.Initializable;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-
-import java.net.URL;
-import java.util.ResourceBundle;
+import ru.itis.controller.GameField;
 
 public class Pudge implements Runnable {
     private ImageView imageView;
@@ -48,31 +45,29 @@ public class Pudge implements Runnable {
         while (true) {
             if (isAlive) {
                 try {
-                    Thread.sleep(50);
+                    Thread.sleep(200);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
                 Platform.runLater(this::movePudge);
-
-
+            } else {
+                respawnPudge();
+                setAlive(true);
             }
         }
 
     }
-    void movePudge() {
 
-        GameField gameField = new GameField();
+    private void respawnPudge() {
+        imageView.setX(0.0);
+    }
 
-//        int width = gameField.width;
-//           System.out.println(width);
+    public void movePudge() {
         if (imageView.getX() >= 1440) {
-
             getBack();
         } else {
             this.imageView.setX(imageView.getX() + 10);
-//            System.out.println(imageView.getX());
         }
-
     }
     void  getBack() {
         while (imageView.getX() > 10) {
@@ -80,7 +75,7 @@ public class Pudge implements Runnable {
         }
     }
 
-    synchronized void configurePudge() {
+    public synchronized void configurePudge() {
         imageView.setImage(new Image(getClass().getResourceAsStream("/img/pudge_model.png")));
         imageView.setFitHeight(50);
         imageView.setFitWidth(50);
